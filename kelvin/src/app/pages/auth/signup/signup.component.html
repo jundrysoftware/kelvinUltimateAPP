@@ -1,0 +1,85 @@
+<!--
+  - Signup Screen
+  - @author    ThemesBuckets <themebucketbd@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   ThemesBuckets
+-->
+
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!-- Back To Landing Page -->
+    <ion-buttons slot="start">
+      <ion-back-button color="dark" default-href="" text="" icon="arrow-back" routerLink="/landing"
+        routerDirection="root">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content id="signup" fullscreen>
+  <div class="section_one">
+    <h2>SIGN UP</h2>
+    <p>Fill the details & create your account</p>
+  </div>
+
+  <!-- SignUp Form -->
+  <div class="section_two ion-padding">
+    <form class="ion-padding">
+      <!-- Name -->
+      <ion-item>
+        <ion-label>
+          <ion-icon name="person" color="dark"></ion-icon>
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="name" placeholder="Names" name="name"></ion-input>
+      </ion-item>
+
+      <!-- Last Names -->
+      <ion-item class="ion-padding-top">
+        <ion-label>
+          <ion-icon name="person" color="dark"></ion-icon>
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="lastname" placeholder="Last Name" name="lastname"></ion-input>
+      </ion-item>
+
+      <!-- Last Names -->
+      <ion-item class="ion-padding-top">
+        <ion-label>
+          <ion-icon name="home"></ion-icon>
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="address" placeholder="Address" name="address"></ion-input>
+      </ion-item>
+
+      <!-- Phone Number -->
+      <ion-item class="ion-padding-top">
+        <ion-label>
+          <ion-icon name="call" color="dark"></ion-icon>
+        </ion-label>
+        <ion-input type="number" [(ngModel)]="phone" placeholder="Phone Number" name="phone"></ion-input>
+      </ion-item>
+
+       <!-- Email -->
+       <ion-item class="ion-padding-top">
+        <ion-label>
+          <ion-icon name="mail" color="dark"></ion-icon>
+        </ion-label>
+        <ion-input type="email" [(ngModel)]="email" placeholder="Email" name="email"></ion-input>
+      </ion-item>
+
+      <!-- Password -->
+      <ion-item class="ion-padding-top">
+        <ion-label>
+          <ion-icon name="key" color="dark"></ion-icon>
+        </ion-label>
+        <ion-input type="password" [(ngModel)]="password" placeholder="Password" name="password"></ion-input>
+      </ion-item>
+
+      <!-- SignUp Button -->
+      <div class="buttons ion-padding-top">
+        <ion-button expand="block" color="dark" (click)="sendRegistro()">
+          <ion-text><strong>SIGN UP</strong></ion-text>
+        </ion-button></div>
+    </form>
+  </div>
+</ion-content>

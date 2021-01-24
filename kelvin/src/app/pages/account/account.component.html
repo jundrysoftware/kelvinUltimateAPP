@@ -1,0 +1,57 @@
+<!--
+  - Account Screen
+  - @author    ThemesBuckets <themebucketbd@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   ThemesBuckets
+-->
+
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="dark">
+
+    <!-- Side Menu -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Page title -->
+    <ion-title>Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content id="account" class="ion-padding">
+
+  <!-- User/Profile Infos -->
+  <ion-item lines="none">
+    <!-- Avatar/Image of User -->
+    <ion-avatar slot="end">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+
+    <!-- Name of User -->
+    <ion-label>
+      <h2>Alessia McKenzie</h2>
+    </ion-label>
+  </ion-item>
+
+  <!-- Some Menu Options -->
+  <ion-card>
+    <ion-grid>
+      <ion-row class="ion-text-center">
+        <ion-col>
+          <ion-icon name="heart" style="zoom:1.5;"></ion-icon><br />
+          <ion-text>Wish List</ion-text>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="checkbox-outline" style="zoom:1.5;"></ion-icon><br />
+          Orders
+        </ion-col>
+        <ion-col>
+          <ion-icon name="cart" style="zoom:1.5;"></ion-icon><br />
+          Cart
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
